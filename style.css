@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #D3D3D3;
+    background-color: rgb(25, 25, 25);
+    color: rgb(139, 139, 139);
     font-family: 'Bebas Neue';
     scroll-behavior: smooth;
     scrollbar-gutter: none;
+    
 }
 .no-scroll::-webkit-scrollbar{
     display: none;
@@ -21,23 +23,23 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 1.875em 5%;
-    color: #36454F;
+    color: #aaa;
 }
 
 button{
    
     padding: 9px 25px;
-    border: 2px solid #36454F;
+    border: 4px solid #aaa;
     border-radius: 7px;
-    color:#36454F ;
+    color:#aaa ;
     cursor: pointer;
     background-color: transparent;
 }
 button:hover{
-    border: 1px solid #36454F;
-    background: orangered;
+    border: 1px solid #aaa;
+    background: #36454F;
     transition: all 1s ease 0s;
-    color: #36454F;
+    color: #aaa;
 }
 
 .info-center{
@@ -50,7 +52,7 @@ button:hover{
 .info-center h1{
     font-size: 2.5rem;
     line-height: 48px;
-    color: #36454F;
+    color: rgb(139, 139, 139);
 
 
 }.info-center h1 .s-1{
@@ -63,7 +65,7 @@ button:hover{
     justify-content: space-between;
     padding: .87em 1.87em ;
     position: relative;
-    top: 16em;
+    top: 13em;
 }
 .bottom-left-info{
     display: flex;
@@ -72,17 +74,22 @@ button:hover{
     justify-content: center;
    
     
-    color: #36454F;
+    color: #aaa;
 
+}
+.center-bottom-page h3{
+    z-index: 1;
+    
 }
 .center-bottom-page{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #36454F;
+    color: #aaa;
     
     width: 20%;
+    
     
     align-items: center;
     justify-content: center;
@@ -90,6 +97,9 @@ button:hover{
 }
 .empty{
     width: 20%;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
 }
  .center-bottom-page .fa-arrow-down{
     font-size: 1.275rem;
@@ -97,58 +107,24 @@ button:hover{
     top: 2.375em;
     left: 49%;
     width: 16%;
-    animation: scrolled .5s infinite linear;
+    animation: scrolled 1.5s infinite linear;
     background-color: transparent;
-}
-@keyframes scrolled {
-    
-  0%{top: 100px;}
-  
-}
-.projects{
-    width: 100%;
-    height: 120vh;
-    position: absolute;
-    top: 1000px;
-   
-}
-.header{
-    position: absolute;
-    top: 30px;
-    display: flex;
-    width: 80%;
-    color: #36454F;
-}
-.left-header{
-    padding-left: 80px;
-    left: 70px;
-    position: absolute;
-}
-.right-header h4{
-    left: 1390px;
-    position: absolute;
-    color: #36454F;
-    opacity: 52%;
-    width: 100px;
-}
-.line-1{
-    color: #36454F;
-    height: 2px;
-    width: 100px;
-    position: absolute;
-    top: 1000px;
 }
 #text{
     position: absolute;
-    left: 1390px;
-    top: 500px;
+    
+    top: -73px;
     font-size: 16px;
     height: 160px;
-    color: #36454F;
+    color: #aaa;
     padding-right: 25px;
     animation: animate 5s linear infinite;
 
    
+}
+span{
+    position: absolute;
+    transform-origin: 0 80px;
 }
 @keyframes animate{
     from{
@@ -158,235 +134,142 @@ button:hover{
         transform: rotate(360deg);
     }
 }
-span{
-    position: absolute;
-    transform-origin: 0 80px;
+@keyframes scrolled {
+    
+  0%{top: 100px;}
+  
 }
-.first-line{
-    margin: 0;
-    width: 80%;
-    height: 2px;
-    border: 0 none;
-    left: 150px;
-    background-color: #36454F;
+/*--end of section 1*/
+.projects{
     position: absolute;
-    top: 200px;
+    
+    top: 50.875em;
+    height: 100vh;
+    width: 100%;
 }
-.second-line{
-    width: 80%;
-    height: 2px;
-    border: 0 none;
-    left: 93px;
-    background-color: #36454F;
-    position: absolute;
-    top: 300px;
+.projects .header{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 1.875em 5%;
+    color: rgb(139, 139, 139);
 }
-.third-line{
-    width: 80%;
-    height: 2px;
-    border: 0 none;
-    left: 93px;
-    background-color: #36454F;
-    position: absolute;
-    top: 400px;
+.right-header a{
+    text-decoration: none;
 }
-.fourth-line{
-    width: 80%;
-    height: 2px;
-    border: 0 none;
-    left: 93px;
-    background-color: #36454F;
-    position: absolute;
-    top: 500px;
+.project-showcase{
+   width: 100%;
+   padding:2.8em 3.875em;
 }
-.fifth-line{
-    width: 80%;
+hr{
+    background-color: rgb(139, 139, 139);
     height: 2px;
-    border: 0 none;
-    left: 93px;
-    background-color: #36454F;
-    position: absolute;
-    top: 600px;
+    border: none;
+    border-radius: 10px;
 }
-.sixth-line{
-    width: 80%;
-    height: 2px;
-    border: 0 none;
-    left: 93px;
-    background-color: #36454F;
-    position: absolute;
-    top: 700px;
+.first-project h5{
+    opacity: 50%;
+    position: relative;
+    left: 95px;
 }
-.seventh-line{
-    width: 80%;
-    height: 2px;
-    border: 0 none;
-    left: 93px;
-    background-color: #36454F;
-    position: absolute;
-    top: 800px;
+.first-project{
+    
+    color: rgb(139, 139, 139);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .first-project a{
-    position: absolute;
-    left: 150px;
-    top: 207px;
     text-decoration: none;
-    color: #36454F;
-    font-size: 72px;
-    font-family: 'Bebas Neue';
-    
+    color: rgb(139, 139, 139);
+    font-size: 3.6rem;
 }
-
-.first-project a:hover{
-    color: orangered;
-    transform-style: smooth;
-    transition: all .3s ease-in-out;
+.second-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(139, 139, 139);
 }
 .second-project a{
-    position: absolute;
-    left: 150px;
-    top: 307px;
     text-decoration: none;
-    color: #36454F;
-    font-size: 72px;
-    font-family: 'Bebas Neue';
-    
+    color: rgb(139, 139, 139);
+    font-size: 3.6rem;
 }
-.second-project a:hover{
-    color: orangered;
-    transition: all .3s ease-in-out;
+.second-project h5{
+    position: relative;
+    left: 75px;
+    opacity: 50%;
+}
+.third-project{
+    color: rgb(139, 139, 139);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
 }
 .third-project a{
-    position: absolute;
-    left: 150px;
-    top: 407px;
     text-decoration: none;
-    color: #36454F;
-    font-size: 72px;
-    font-family: 'Bebas Neue';
-    
+    color: rgb(139, 139, 139);
+    font-size: 3.6rem;
+} 
+.third-project h5{
+   position: relative;
+   left: 30px;
+    opacity: 50%;
 }
-.third-project a:hover{
-    color: orangered;
-    transition: all .3s ease-in-out;
+.fourth-project{
+    display: flex;
+    justify-content: space-between;
+    color: #36454F;
+    align-items: center;
 }
 .fourth-project a{
-    position: absolute;
-    left: 150px;
-    top: 507px;
+    color: rgb(139, 139, 139);
+    font-size: 3.6rem;
     text-decoration: none;
-    color: #36454F;
-    font-size: 72px;
-    font-family: 'Bebas Neue';
-    
 }
-.fourth-project a:hover{
-    color: orangered;
-    transition: all .3s ease-in-out;
+.fourth-project h5{
+    opacity: 50%;
+    position: relative;
+    left: 85px;
+}
+.fifth-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #36454F;
 }
 .fifth-project a{
-    position: absolute;
-    left: 150px;
-    top: 607px;
     text-decoration: none;
-    color: #36454F;
-    font-size: 72px;
-    font-family: 'Bebas Neue';
-    
+    color: rgb(139, 139, 139);
+    font-size: 3.6rem;
+
 }
-.fifth-project a:hover{
-    color: orangered;
-    transition: all .3s ease-in-out;
+.fifth-project h5{
+    opacity: 50%;
+    position: relative;
+    left: -30px;
+}
+.sixth-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #36454F;
+}
+.sixth-project h5{
+    opacity: 50%;
+    position: relative;
+    left: -20px;
 }
 .sixth-project a{
-    position: absolute;
-    left: 150px;
-    top: 707px;
     text-decoration: none;
-    color: #36454F;
-    font-size: 72px;
-    font-family: 'Bebas Neue';
-    
-}
-.sixth-project a:hover{
-    color: orangered;
-    transition: all .3s ease-in-out;
-}
-.myself-about{
-    position: absolute;
-    top: 1500px;
+    color: rgb(139, 139, 139);
+    font-size: 3.6rem;
 }
 
-.small-job-1{
-position: absolute;
-top: 242px;
-left: 800px;
-color: #36454F ;
-opacity: 53%;
-}
-.about-1{
-    position: absolute;
-    top: 232px;
-    left: 1200px;
-    font-size: 30px;
-    color: #36454F;
-}
-.small-job-2{
-    position: absolute;
-top: 322px;
-left: 800px;
-color: #36454F ;
-opacity: 53%;
-}
-.about-2{
-    position: absolute;
-    top: 334px;
-    left: 1135px;
-    font-size: 30px;
-    color: #36454F;
-}
-.small-job-3{
-    position: absolute;
-    top: 442px;
-    left: 800px;
-    color: #36454F ;
-    opacity: 52%;
-}
-.small-job-4{
-    position: absolute;
-    top: 542px;
-    left: 800px;
-    color: #36454F ;
-    opacity: 52%;
-}
-.small-job-5{
-    position: absolute;
-    top: 642px;
-    left: 800px;
-    color: #36454F ;
-    opacity: 52%;
-}
-.about-5{
-    position: absolute;
-    top: 637px;
-    left: 1120px;
-    color: #36454F ;
-    font-size: 30px;
-}
-.small-job-6{
-    position: absolute;
-    top: 742px;
-    left: 800px;
-    color: #36454F ;
-    opacity: 52%;
-}
-.about-6{
-    position: absolute;
-    top: 737px;
-    left: 1120px;
-    color: #36454F ;
-    font-size: 30px;
-}
+
+
 .footer-header{
     position: absolute;
     color: #36454F;
