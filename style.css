@@ -15,7 +15,7 @@
     height: 100%;
 }
 .no-scroll::-webkit-scrollbar{
-    
+    display: none;
 }
 .homepage{
     height: 100vh;
