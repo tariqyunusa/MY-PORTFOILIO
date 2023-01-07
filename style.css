@@ -5,8 +5,8 @@
     background-color: rgb(25, 25, 25);
     color: rgb(139, 139, 139);
     font-family: 'Bebas Neue';
-    scroll-behavior: smooth;
-    scrollbar-gutter: none;
+
+  
     
 }
 .no-scroll{
@@ -141,9 +141,7 @@ span{
 
 /*--end of section 1*/
 .projects{
-    position: absolute;
     
-    top: 50.875em;
     height: 100vh;
     width: 100%;
 }
@@ -363,9 +361,57 @@ and (max-device-width: 425px) {
 .info-center h1{
     font-size: 16px;
     line-height: 20px;
+    position: relative;
+    left: -31px;
 }
 .center-page{
     display: none;
+}
+.center-bottom-page {
+    display: none;
+}
+.projects{
+    position: relative;
+    top: -241px;
+}
+.first-project h5 {
+    display: none;
+}
+.first-project h4{
+    display: none;
+}
+.second-project h5{
+    display: none;
+}
+.second-project h4{
+    display: none;
+}
+.third-project h4{
+    display: none;
+}
+.third-project h5{
+    display: none;
+}
+.fourth-project h4{
+    display: none;
+}
+.fourth-project h5{
+    display: none;
+}
+.fifth-project h4{
+    display: none;
+}
+.fifth-project h5{
+    display: none;
+}
+.sixth-project h5{
+    display: none;
+}
+.sixth-project h4{
+    display: none;
+}
+.project-showcase{
+    padding-left: 29px;
 }
 }
 
